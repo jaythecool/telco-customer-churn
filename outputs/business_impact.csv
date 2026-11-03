@@ -1,0 +1,5 @@
+,customers_targeted,churners_reached,net_value_usd,net_value_per_1000_customers
+No campaign,0.0,0.0,0.0,0.0
+Target every customer,1409.0,374.0,-40108.270849498316,-28465.770652589297
+Model @ 0.50,550.0,292.0,23693.00778595318,16815.477491804955
+Model @ 0.63 (tuned),404.0,237.0,23470.69467558529,16657.696717945557

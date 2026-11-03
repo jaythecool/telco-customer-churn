@@ -1,0 +1,8 @@
+
+PROJECT SUMMARY
+- Built an end-to-end churn prediction pipeline on 7,043 telecom customers (19 raw features -> 45 model inputs) using leakage-safe scikit-learn Pipelines, stratified splits and 5-fold stratified cross-validation.
+- Tuned Logistic Regression and Random Forest over 52 hyperparameter configurations (260 cross-validated fits, 0 failed), optimising ROC-AUC with class-imbalance handling.
+- Reduced Random Forest overfitting: train-test accuracy gap 22.2 -> 3.4 pts; test ROC-AUC 0.816 -> 0.844.
+- Selected RandomForest (tuned) by cross-validated ROC-AUC; on held-out data it achieved ROC-AUC 0.844, recall 63.4%, precision 58.7% at a tuned decision threshold of 0.63 (recall 78.1% at the default 0.50).
+- Estimated retention-campaign net value of +$16,658 per 1,000 customers (+$63,579 vs. contacting every customer on the test set), under stated cost assumptions.
+- Identified top churn drivers via permutation importance: Contract, tenure, InternetService.

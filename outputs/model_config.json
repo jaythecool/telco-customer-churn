@@ -1,0 +1,18 @@
+{
+  "model": "RandomForest (tuned)",
+  "decision_threshold": 0.63,
+  "best_params": {
+    "n_estimators": 200,
+    "min_samples_split": 15,
+    "min_samples_leaf": 5,
+    "max_features": "sqrt",
+    "max_depth": 8,
+    "class_weight": "balanced_subsample"
+  },
+  "business_assumptions": {
+    "offer_cost": 100.0,
+    "save_rate": 0.3,
+    "retention_months": 12
+  },
+  "random_state": 42
+}
